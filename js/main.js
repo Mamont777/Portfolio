@@ -1,5 +1,10 @@
 $(window).on("load", function () {
-  $("#header").vide("../video/cover.mp4", {
-    bgColor: "#c5a919",
+  $("#header").vide({
+    mp4: "../video/cover.mp4",
+    poster: "../video/cover.jpg",
   });
 });
+
+//  {
+//     bgColor: "#c5a919",
+//   }
