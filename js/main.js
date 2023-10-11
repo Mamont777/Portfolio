@@ -1,10 +1,7 @@
 $(window).on("load", function () {
-  $("#header").vide({
-    mp4: "../video/cover.mp4",
-    poster: "../video/cover.jpg",
+  $("#header").vide("../video/cover.mp4", {
+    bgColor: "#c5a919",
   });
 });
 
-//  {
-//     bgColor: "#c5a919",
-//   }
+// linear-gradient(90deg, rgb(255, 247, 173), rgb(255, 169, 249) 100%)
