@@ -3,5 +3,3 @@ $(window).on("load", function () {
     bgColor: "#c5a919",
   });
 });
-
-// linear-gradient(90deg, rgb(255, 247, 173), rgb(255, 169, 249) 100%)
