@@ -25,6 +25,7 @@
         <a href="#portfolio" class="header-arrow">
             <img src="./img/header/chevron-down.svg" alt="Arrow">
         </a>
+        <div id="youtube-video"></div>
     </header>
 
     <main>
@@ -112,10 +113,33 @@
 
     <!-- Libraries and plugins -->
 </body>
-<script src="./libs/jquery/jquery-3.7.1.min.js"></script>
-<script src="./libs/vide/jquery.vide.min.js"></script>
+<!-- <script src="./libs/jquery/jquery-3.7.1.min.js"></script>
+<script src="./libs/vide/jquery.vide.min.js"></script> -->
 
 <!-- Script -->
-<script src="./js/main.js"></script>
+<!-- <script src="./js/main.js"></script> -->
+<script>
+    function onYouTubeIframeAPIReady() {
+        var player = new YT.Player('youtube-video', {
+            videoId: 'YIoMnUsU-8A',
+            playerVars: {
+                autoplay: 1,
+                controls: 0,
+                showinfo: 0,
+                rel: 0,
+                modestbranding: 1,
+                loop: 1,
+                playlist: "YIoMnUsU-8A"
+            },
+            events: {
+                onReady: function (event) {
+                    event.target.mute();
+                },
+            }
+        });
+    }
+</script>
+<script src="https://www.youtube.com/iframe_api"></script>
+
 
 </html>
