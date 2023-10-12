@@ -26,6 +26,20 @@ img {
 
 /* Header */
 
+
+
+#youtube-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    /* Чтобы видео не перехватывало события мыши */
+    z-index: -1;
+    /* Размещаем видео "под" контентом */
+}
+
 .header {
     position: relative;
 
@@ -37,10 +51,12 @@ img {
     width: 100%;
     height: 100vh;
 
-    /* background-color: #51647F;
-    background-image: url('../img/header/header-bg.jpg'); */
+    /* background-color: #51647F; */
+    /* background-image: url('../img/header/header-bg.jpg'); */
     background-size: cover;
     background-position: center;
+
+    overflow: hidden;
 }
 
 .header-title {
